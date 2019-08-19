@@ -68,12 +68,6 @@ oneRun_Network <- function(conADM = NULL, conAF1 = NULL, verbose = TRUE){
                           open = "wt")
   }
 
-  # safety close files at end of run
-  # on.exit(expr = close(private$conADM))
-  # on.exit(expr = close(private$conAF1), add = TRUE)
-  on.exit(expr = print("OUT OF SCOPE"))
-
-
   # males
   writeLines(text = paste0(c("Time","Patch",self$get_genotypesID()),collapse = ","),con = private$conADM,sep = "\n")
 
@@ -97,17 +91,12 @@ oneRun_Network <- function(conADM = NULL, conAF1 = NULL, verbose = TRUE){
     private$tNow = private$tNow + 1L
     if(verbose){setTxtProgressBar(pb,value = private$tNow)}
   }
-
-
-
-
-
+  
+  ####################
+  # close connections
+  ####################
   close(private$conADM)
   close(private$conAF1)
-
-
-
-
 
   if(verbose){cat("run ",private$runID," over\n",sep="")}
 
@@ -155,13 +144,6 @@ multRun_Network <- function(conM = NULL, conF = NULL, verbose = TRUE){
                           open = "wt")
 
     ####################
-    # close connections safely at end of run
-    ####################
-    # on.exit(expr = close(private$conADM))
-    # on.exit(expr = close(private$conAF1), add = TRUE)
-
-
-    ####################
     # write headers
     ####################
     # males
@@ -195,18 +177,14 @@ multRun_Network <- function(conM = NULL, conF = NULL, verbose = TRUE){
       private$tNow = private$tNow + 1L
       if(verbose){setTxtProgressBar(pb,value = private$tNow)}
     }# end rest of sim
-
-
-
-
+    
+    ####################
+    # close connections
+    ####################
     close(private$conADM)
     close(private$conAF1)
 
-
-
-
-
-
+    
     if(verbose){cat("run ",private$runID," over\n",sep="")}
 
     ####################

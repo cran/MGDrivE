@@ -98,17 +98,16 @@ A \code{Network} class object stores all the information for a simulation on a d
 }
 
 \examples{
-\dontrun{
-# There are no simple examples for this, so looking at the vignettes would be
-#  most useful.
+ \dontrun{
+ # There are no simple examples for this, so looking at the vignettes would be
+ #  most useful.
 
-# Complete manual with examples, but none explored in depth.
-vignette("MGDrivE-Examples", package = "MGDrivE")
+ # Complete manual with examples, but none explored in depth.
+ vignette("MGDrivE-Examples", package = "MGDrivE")
 
-# One example, explored in great detail. This is probably more helpful.
-vignette("MGDrivE-Run", package = "MGDrivE")
-
-}
+ # One example, explored in great detail. This is probably more helpful.
+ vignette("MGDrivE-Run", package = "MGDrivE")
+ }
 
 }
 \keyword{R6}

@@ -21,11 +21,11 @@ plotMGDrivEMult(readDir, whichPatches = NULL, totalPop = FALSE,
 \item{alpha}{Double, specify the opacity for plotting}
 }
 \description{
-Plots several traces from MGDrive, assuming each set is another repetition
+Plots several traces from MGDrivE, assuming each set is another repetition
 from the same experiment. \cr
-Given the readDirectory, this function assumes the follow file structure: \cr
+Given the readDir, this function assumes the follow file structure: \cr
 \itemize{
-\item readDirectory
+\item readDir
 \itemize{
 \item repetition 1
 \itemize{

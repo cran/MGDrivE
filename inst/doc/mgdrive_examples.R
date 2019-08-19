@@ -100,9 +100,17 @@ lat_longs <- matrix(data = c(37.873507, -122.268181,
 # dmat <- MGDrivE::calcVinSph(latLongs = lat_longs)
 distMat <- MGDrivE::calcVinEll(latLongs = lat_longs)
 
+# calculate a zero-inflated movement kernal over the distances
+# p0 is the probability, per day, that a mosquito doesn't move.
+#  This is the value used in Code sample 1 from the paper, and in the examples in our
+#  github repository. 
+# rate is the average migration rate per day, implying 1/rate is the average 
+#  migration distance. The average distance was estimated as ~55.5 meters per day,
+#  which is the value used in Code sample 1 and in the examples on github.
+p0 <- 0.991
+rate <- 1/55.5
 
-# rate parameter such that about 90% of movement is within 1036 meters
-moveMat <- MGDrivE::calcExpKernel(distMat = distMat, r = 1/450)
+moveMat <- MGDrivE::calcHurdleExpKernel(distMat = distMat, rate = rate, p0 = p0)
 moveMat
 
 ## ------------------------------------------------------------------------

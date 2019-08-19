@@ -99,17 +99,16 @@
 #'  * verbose: Chatty? Default is TRUE
 #'
 #' @examples
-#' \dontrun{
-#' # There are no simple examples for this, so looking at the vignettes would be
-#' #  most useful.
+#'  \dontrun{
+#'  # There are no simple examples for this, so looking at the vignettes would be
+#'  #  most useful.
 #'
-#' # Complete manual with examples, but none explored in depth.
-#' vignette("MGDrivE-Examples", package = "MGDrivE")
+#'  # Complete manual with examples, but none explored in depth.
+#'  vignette("MGDrivE-Examples", package = "MGDrivE")
 #'
-#' # One example, explored in great detail. This is probably more helpful.
-#' vignette("MGDrivE-Run", package = "MGDrivE")
-#'
-#' }
+#'  # One example, explored in great detail. This is probably more helpful.
+#'  vignette("MGDrivE-Run", package = "MGDrivE")
+#'  }
 #'
 #' @export
 Network <- R6::R6Class(classname = "Network",
@@ -469,7 +468,7 @@ Network$set(which = "public",name = "get_genotypesN",
   value = get_genotypesN_Network,overwrite = TRUE
 )
 
-#' Get wildType
+#' Get wildtype
 #'
 #' Return wild-type genotype
 #'
