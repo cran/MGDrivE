@@ -1,5 +1,6 @@
 ---
 title: "MGDrivE Mathematical Description"
+#output: rmarkdown::pdf_document
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteEngine{knitr::rmarkdown}
@@ -78,19 +79,23 @@ Note: For inheritance operations to be consistent within the framework the summa
 An inheritance cube in an array object that specifies inheritance probabilities (offspring genotype probability)
 stratified by male and female parent genotypes. **MGDrivE** provides the following cubes to model different gene drive systems:
 
-* 1 Locus Maternal-Toxin/Zygotic-Antidote System
-* 2 Locus Maternal-Toxin/Zygotic-Antidote System
-* Homing Drive with 1 Resistance Allele
-* CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats) with 2 Resistance Alleles and maternal deposition
-* Killer-Rescue System
-* MEDEA (Maternal Effect Dominant Embryonic Arrest)
-* Reciprocal Translocations
-* RIDL (Release of Insects with Dominant Lethality)
-* Mendelian
-* Split-Drive
-* trans-Complementing Gene Drive
-* X-Linked trans-Complementing Gene Drive
-* Wolbachia
+* [1 Locus Maternal-Toxin/Zygotic-Antidote System]
+* [2 Locus Maternal-Toxin/Zygotic-Antidote System]
+* [1 Locus Cleave and Rescue (ClvR)]
+* [2 Locus Cleave and Rescue (ClvR)]
+* [Homing Drive with 1 Resistance Allele]
+* [CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats) with 2 Resistance Alleles and maternal deposition]
+* [Autosomal ECHACR]
+* [X-Linked ECHACR]
+* [Killer-Rescue System]
+* [MEDEA (Maternal Effect Dominant Embryonic Arrest)]
+* [Reciprocal Translocations]
+* [RIDL (Release of Insects with Dominant Lethality)]
+* [Mendelian]
+* [Split-Drive]
+* [trans-Complementing Gene Drive]
+* [X-Linked trans-Complementing Gene Drive]
+* [Wolbachia]
 
 ## Population Dynamics
 
@@ -223,7 +228,7 @@ All remaining stochastic processes (larval survival, hatching ,pupating, survivi
 
 **Migration**
 
-Variance of stochastic movement (not used in diffusion model of migration). It affects the concentration of probability in the Dirchlet simplex, small values lead to high variance and large values lead to low variance.
+Variance of stochastic movement (not used in diffusion model of migration).
 
 # References
 

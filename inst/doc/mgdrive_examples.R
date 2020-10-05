@@ -143,7 +143,7 @@ sitesNumber <- nrow(moveMat)
 ####################
 # Basic Inheritance pattern
 ####################
-# Mendelian cube with standard (default) paraameters
+# Mendelian cube with standard (default) parameters
 cube <- cubeMendelian()
 
 ####################
@@ -271,7 +271,7 @@ patchPops <- rep(adultPopEquilibrium,sitesNumber)
 ####################
 # Basic Inheritance pattern
 ####################
-# Mendelian cube with standard (default) paraameters
+# Mendelian cube with standard (default) parameters
 
 # This time, lets put fitness cost on the homozygotes, giving the heterozygote
 #  an advantage
@@ -427,7 +427,7 @@ sitesNumber <- nrow(moveMat)
 ####################
 # Basic Inheritance pattern
 ####################
-# Mendelian cube with standard (default) paraameters
+# Mendelian cube with standard (default) parameters
 
 # This time, lets put fitness cost on the homozygotes, giving the heterozygote
 #  an advantage
@@ -562,7 +562,7 @@ sitesNumber <- nrow(moveMat)
 ####################
 # Basic Inheritance pattern
 ####################
-# Mendelian cube with standard (default) paraameters
+# Mendelian cube with standard (default) parameters
 cube <- cubeMendelian()
 
 ####################
@@ -678,7 +678,7 @@ patchPops <- rep(adultPopEquilibrium,sitesNumber)
 ####################
 # Basic Inheritance pattern
 ####################
-# Mendelian cube with standard (default) paraameters
+# Mendelian cube with standard (default) parameters
 cube <- cubeMendelian()
 
 ####################
@@ -809,7 +809,7 @@ sitesNumber <- nrow(moveMat)
 ####################
 # Basic Inheritance pattern
 ####################
-# Mendelian cube with standard (default) paraameters
+# Mendelian cube with standard (default) parameters
 cube <- cubeMendelian()
 
 ####################

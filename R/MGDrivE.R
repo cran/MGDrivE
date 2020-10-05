@@ -251,7 +251,7 @@ NULL
 #' In these equations the new population of the patch \eqn{i} is calculated by
 #' summing the migrating mosquitoes of all the \eqn{j} patches across the network
 #' defined by the transitions matrix \eqn{\tau}, which stores the mosquito migration
-#' probabilities from patch to patch.mIt is worth noting that the migration
+#' probabilities from patch to patch. It is worth noting that the migration
 #' probabilities matrices can be different for males and females; and that there's
 #' no inherent need for them to be static (the migration probabilities may vary
 #' over time to accommodate wind changes due to seasonality).
@@ -316,8 +316,6 @@ NULL
 #'
 #' \subsection{Migration}{
 #' Variance of stochastic movement (not used in diffusion model of migration).
-#' It affects the concentration of probability in the Dirchlet simplex, small
-#' values lead to high variance and large values lead to low variance.
 #' }
 #'
 #' @references
